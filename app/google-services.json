@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "820055424792",
+    "project_id": "redesocial-1bf4d",
+    "storage_bucket": "redesocial-1bf4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820055424792:android:2643635bdca6d809f4286d",
+        "android_client_info": {
+          "package_name": "com.app.redesocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820055424792-psm4ofsmlcd3ckknv6bv179jvhgqn0pf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACOtN6ET5yzLIaPiPXeNsymU4eKU98drM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820055424792-psm4ofsmlcd3ckknv6bv179jvhgqn0pf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.app.redesocial.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_createContFragment"
+            app:destination="@id/createContFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.app.redesocial.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_creatPostFragment"
+            app:destination="@id/creatPostFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.app.redesocial.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" />
+    <fragment
+        android:id="@+id/createContFragment"
+        android:name="com.app.redesocial.CreateContFragment"
+        android:label="fragment_create_cont"
+        tools:layout="@layout/fragment_create_cont" >
+        <action
+            android:id="@+id/action_createContFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_createContFragment_to_posLoginFragment"
+            app:destination="@id/posLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/posLoginFragment"
+        android:name="com.app.redesocial.PosLoginFragment"
+        android:label="fragment_pos_login"
+        tools:layout="@layout/fragment_pos_login" >
+        <action
+            android:id="@+id/action_posLoginFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/creatPostFragment"
+        android:name="com.app.redesocial.CreatPostFragment"
+        android:label="fragment_creat_post"
+        tools:layout="@layout/fragment_creat_post" >
+        <action
+            android:id="@+id/action_creatPostFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_creatPostFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+    </fragment>
+</navigation>
