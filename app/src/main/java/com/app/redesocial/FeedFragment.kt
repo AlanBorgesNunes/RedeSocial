@@ -60,16 +60,11 @@ class FeedFragment : Fragment() {
                             Snapshot.child(user).child("id").getValue(PostData::class.java)
                         if (anotacoes == null) {
 
-
                         } else {
                             getImagePost()
-                            userArrayList.add(anotacoes!!)
+                            userArrayList.add(anotacoes)
                         }
-
-
                     }
-
-
                     rvFeed.adapter = RecyclerProfileAdapter(userArrayList)
 
                 }
