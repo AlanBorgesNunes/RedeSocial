@@ -17,11 +17,12 @@ class RecyclerFeedAdapter(private val userList: List<PostData>) :
         val itemTitle = ItemView.findViewById<TextView>(R.id.title_item)
         val itemDescription = ItemView.findViewById<TextView>(R.id.description_item)
         val itemImage = ItemView.findViewById<ImageView>(R.id.image_item)
+        val ItemMenu = ItemView.findViewById<ImageView>(R.id.menu_post_feed)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_profile_post, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_profile_post_feed, parent, false)
         return ViewHolder(v)
     }
 
